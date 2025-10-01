@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 400" class="flat-rocket">
+  <!-- 火箭主体 -->
+  <path d="M100 20 L120 60 L110 300 L90 300 L80 60 Z" fill="#E0E0E0" />
+  
+  <!-- 火箭头部 -->
+  <path d="M100 20 L115 50 L100 60 L85 50 Z" fill="#F5F5F5" />
+  
+  <!-- 火箭尾翼 -->
+  <path d="M90 300 L70 340 L90 330 Z" fill="#B0B0B0" />
+  <path d="M110 300 L130 340 L110 330 Z" fill="#B0B0B0" />
+  <path d="M100 300 L100 340 L120 330 Z" fill="#B0B0B0" />
+  
+  <!-- 引擎 -->
+  <rect x="90" y="330" width="20" height="15" fill="#424242" />
+  
+  <!-- 火焰 -->
+  <path d="M95 345 L100 380 L105 345 Z" fill="#FF5252" opacity="0.8">
+    <animate attributeName="d" 
+             values="M95 345 L100 380 L105 345 Z;
+                     M93 345 L100 390 L107 345 Z;
+                     M95 345 L100 380 L105 345 Z" 
+             dur="0.5s" 
+             repeatCount="indefinite" />
+  </path>
+  
+  <!-- 装饰线条 -->
+  <line x1="100" y1="60" x2="100" y2="300" stroke="#9E9E9E" stroke-width="1" />
+  <line x1="90" y1="100" x2="110" y2="100" stroke="#9E9E9E" stroke-width="1" />
+  <line x1="90" y1="150" x2="110" y2="150" stroke="#9E9E9E" stroke-width="1" />
+  <line x1="90" y1="200" x2="110" y2="200" stroke="#9E9E9E" stroke-width="1" />
+  <line x1="90" y1="250" x2="110" y2="250" stroke="#9E9E9E" stroke-width="1" />
+</svg>

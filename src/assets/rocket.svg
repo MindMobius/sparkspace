@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 200">
+  <defs>
+    <linearGradient id="rocketGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF5252;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B71C1C;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="finGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#757575;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#424242;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="flameGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#FFEB3B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF5722;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- 火箭主体 -->
+  <rect x="45" y="30" width="10" height="120" fill="url(#rocketGradient)" rx="5" />
+  
+  <!-- 火箭头部 -->
+  <polygon points="40,30 60,30 50,10" fill="url(#rocketGradient)" />
+  
+  <!-- 尾翼 -->
+  <polygon points="45,150 35,170 45,170" fill="url(#finGradient)" />
+  <polygon points="55,150 65,170 55,170" fill="url(#finGradient)" />
+  
+  <!-- 侧翼 -->
+  <rect x="30" y="80" width="15" height="30" fill="url(#finGradient)" rx="2" />
+  <rect x="55" y="80" width="15" height="30" fill="url(#finGradient)" rx="2" />
+  
+  <!-- 窗口 -->
+  <circle cx="50" cy="60" r="5" fill="#BBDEFB" stroke="#1976D2" stroke-width="1" />
+  
+  <!-- 火焰 -->
+  <ellipse cx="50" cy="160" rx="8" ry="20" fill="url(#flameGradient)" opacity="0.8">
+    <animate attributeName="ry" values="20;25;20" dur="0.5s" repeatCount="indefinite" />
+  </ellipse>
+</svg>
