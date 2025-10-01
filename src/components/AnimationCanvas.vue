@@ -10,9 +10,6 @@
     <div class="rocket-container" ref="rocketContainer">
       <img src="@/assets/flat-rocket.svg" alt="火箭" class="flat-rocket-icon" />
     </div>
-
-    <!-- 信息节点 -->
-    <slot></slot>
   </div>
 </template>
 
